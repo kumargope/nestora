@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import JsonLd from '@/components/seo/JsonLd';
 import { SITE_CONFIG } from '@/lib/constants';
 import ViralDealsWidget from '@/components/ui/ViralDealsWidget';
+import AdsterraSocialBar from '@/components/ads/AdsterraSocialBar';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -78,6 +79,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <ViralDealsWidget />
+        <AdsterraSocialBar />
       </body>
     </html>
   );
