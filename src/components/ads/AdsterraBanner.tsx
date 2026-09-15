@@ -27,7 +27,7 @@ export default function AdsterraBanner({
   const resolvedKey =
     adKey ||
     (format === '728x90'
-      ? process.env.NEXT_PUBLIC_ADSTERRA_728X90_KEY
+      ? process.env.NEXT_PUBLIC_ADSTERRA_728X90_KEY || '6617028750a20d781eda27e867bd94f0'
       : format === '300x250'
       ? process.env.NEXT_PUBLIC_ADSTERRA_300X250_KEY
       : format === '160x600'

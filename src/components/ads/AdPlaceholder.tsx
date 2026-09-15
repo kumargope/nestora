@@ -15,7 +15,7 @@ export default function AdPlaceholder({
   label = 'Advertisement Placement',
 }: AdPlaceholderProps) {
   // Check for Adsterra Configuration first
-  const adsterra728 = process.env.NEXT_PUBLIC_ADSTERRA_728X90_KEY;
+  const adsterra728 = process.env.NEXT_PUBLIC_ADSTERRA_728X90_KEY || '6617028750a20d781eda27e867bd94f0';
   const adsterra300 = process.env.NEXT_PUBLIC_ADSTERRA_300X250_KEY;
 
   if (adsterra728 && (format === 'horizontal' || format === 'auto')) {
