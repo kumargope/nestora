@@ -1,0 +1,37 @@
+/* NESTORA Custom Editorial Styling & Brand Colors */
+
+:root {
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: #FBF9F5 !important;
+  color: #1A1A18;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, .font-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+/* Editorial Brand Palette & Layout Utilities */
+.bg-cream { background-color: #FBF9F5 !important; }
+.bg-cream-card { background-color: #FFFDF9 !important; }
+.bg-beige { background-color: #F4F0E8 !important; }
+.bg-stone-light { background-color: #E8E2D5 !important; }
+.bg-forest { background-color: #2D392F !important; }
+.text-[#2D392F], .text-forest { color: #2D392F !important; }
+.border-nestora { border-color: #E6E0D4 !important; }
+
+/* Image hover micro-interactions */
+.editorial-card-image {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover .editorial-card-image {
+  transform: scale(1.04);
+}
