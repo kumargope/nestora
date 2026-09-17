@@ -23,7 +23,10 @@ export default function ArticleCard({ article, aspectRatio = 'landscape' }: Arti
     article.title,
     primaryProduct?.affiliateUrl
   );
-  const articleUrl = `${SITE_CONFIG.url}/article/${article.slug}`;
+  const baseUrl = typeof window !== 'undefined' && window.location.origin
+    ? window.location.origin
+    : (SITE_CONFIG.url || 'https://nestora-flax.vercel.app');
+  const articleUrl = `${baseUrl}/article/${article.slug}`;
   const isExternalBuy = true;
 
   return (
