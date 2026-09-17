@@ -44,7 +44,7 @@ AFFILIATE_TAG = os.environ.get('NEXT_PUBLIC_AMAZON_AFFILIATE_TAG', 'amzfinds063-
 AMAZON_DOMAIN = os.environ.get('NEXT_PUBLIC_AMAZON_DOMAIN', 'www.amazon.com')
 PINTEREST_TOKEN = os.environ.get('PINTEREST_ACCESS_TOKEN', '')
 PINTEREST_BOARD_ID = os.environ.get('PINTEREST_BOARD_ID', '')
-SITE_URL = os.environ.get('NEXT_PUBLIC_SITE_URL', 'https://nestora.com')
+SITE_URL = os.environ.get('NEXT_PUBLIC_SITE_URL', 'https://nestora-flax.vercel.app')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CATALOG_FILE = os.path.join(BASE_DIR, 'pinterest_catalog.json')

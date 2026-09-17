@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: 'NESTORA',
   tagline: 'Beautiful Ideas for Better Homes',
   description: 'Nestora is a home inspiration platform featuring interior design ideas, room guides, decorating inspiration, and design styles for modern homes.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nestora.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nestora-flax.vercel.app',
   affiliateTag: process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || process.env.NEXT_PUBLIC_AFFILIATE_TAG || 'amzfinds063-20',
   amazonDomain: process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.com',
   defaultAuthor: {

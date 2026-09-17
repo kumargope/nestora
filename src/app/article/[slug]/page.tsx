@@ -14,6 +14,7 @@ import NewsletterBox from '@/components/ui/NewsletterBox';
 import ArticleAd from '@/components/ads/ArticleAd';
 import SidebarAd from '@/components/ads/SidebarAd';
 import JsonLd from '@/components/seo/JsonLd';
+import { SITE_CONFIG } from '@/lib/constants';
 import { formatDate, buildAmazonAffiliateUrl } from '@/lib/utils';
 import { IconClock, IconShoppingBag, IconPinterest } from '@/components/ui/Icons';
 import type { Metadata } from 'next';
@@ -68,7 +69,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     (a) => a.id !== article.id && (a.roomSlug === article.roomSlug || a.styleSlug === article.styleSlug)
   ).slice(0, 3);
 
-  const articleUrl = `https://nestora.com/article/${article.slug}`;
+  const articleUrl = `${SITE_CONFIG.url}/article/${article.slug}`;
 
   return (
     <>
